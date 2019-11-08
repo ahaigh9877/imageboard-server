@@ -1,5 +1,6 @@
 const express = require("express");
 const db = require("./db");
+const Image = require("./image/model");
 
 const app = express();
 
@@ -10,4 +11,4 @@ app.listen(
   console.log(`The app *does* listen: p-p-p-port number ${port} ! ! ! ! !`)
 );
 
-app.get("/", (req, res) => res.send("URRRRRGH."));
+app.get("/", (req, res) => res.send("<h1 style='color:blue'>URRRRRGH.</h1>"));
