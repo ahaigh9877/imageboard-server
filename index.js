@@ -7,5 +7,7 @@ const port = process.env.PORT || 4000;
 
 app.listen(
   port,
-  console.log(`The app *does* listen: port number ${port} ! ! ! ! !`)
+  console.log(`The app *does* listen: p-p-p-port number ${port} ! ! ! ! !`)
 );
+
+app.get("/", (req, res) => res.send("URRRRRGH."));
